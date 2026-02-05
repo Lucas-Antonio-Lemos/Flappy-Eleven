@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Pixel';
+    font-weight: 100;
+}
+
+body {
+    background-color: rgb(66, 50, 50);
+}
+
+div img {
+    height: 80px;
+    width: 60px;
+
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+
+[wm-flappy] {
+    position: relative;
+    border: 5px solid rgb(8, 4, 4);
+    height: 700px;
+    width: 1200px;
+    margin: 15px;
+    background-image: url('../imgs/mundo-invertido.png');
+    overflow: hidden;
+    /*qualquer coisa fora da div desaparece */
+}
+
+.eleven {
+    position: absolute;
+    width: 120px;
+    left: calc(50% - 60px);
+    /* bottom: 50%; */
+
+}
+
+.par-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.barreira .borda {
+    height: 30px;
+    width: 130px;
+    /* background: linear-gradient(90deg, #639301, #A5E82E); */
+    background:linear-gradient(90deg , #3b1414, #e20d0d);
+    border: 2px solid black;
+
+}
+
+.barreira .corpo {
+    height: 180px;
+    width: 110px;
+    /* background: linear-gradient(90deg, #639301, #A5E82E); */
+    background:linear-gradient(90deg , #3b1414, #e20d0d);
+       border: 2px solid black;
+   
+}
+.progresso{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 50px;
+
+
+}
